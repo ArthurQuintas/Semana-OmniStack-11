@@ -1,25 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './global.css';
+
+//import React, { useState } from 'react';
+
+import Routes from './routes';
+
+//JSX - JavaScript XML
+
+//Um componente no React é uma função que retorna HTML
+
+//Estado - Informação mantida por um componente
+
+//Imutabilidade - Variáveis que armazenam informações de Estado, não podem ser manipuladas diretamente, por este motivo se torna necessário a utilização de uma função
+
 
 function App() {
+  /*
+  const [counter, setCounter] = useState(0);
+
+  //Array [valor, funçãoDeAtualização]
+
+  function increment(){
+    setCounter(counter + 1);
+  }
+  */
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          React.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Routes />
+    /*
+    <div>
+      <Header>
+        Contador: {counter}
+      </Header>
+      <button onClick={increment}>Incrementar</button>
     </div>
+    */
   );
 }
 
